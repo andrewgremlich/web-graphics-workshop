@@ -1,0 +1,14 @@
+#layer2 {
+	& #mountain1 {
+		border-left: 300px solid transparent;
+		border-right: 300px solid transparent;
+		
+		border-bottom: 500px solid #0a1e15;
+
+		transform: rotate(9deg);
+
+		position: absolute;
+		left: 10%;
+		top: 20%;
+	}
+}

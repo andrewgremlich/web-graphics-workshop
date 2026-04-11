@@ -3,7 +3,7 @@
 // import heroImg from './assets/hero.png'
 
 import "./base.css";
-import "./layer1.css";
-import "./layer2.css";
+import "./skylayer.css";
+import "./mountainlayer.css";
 
 console.log("hello world");
