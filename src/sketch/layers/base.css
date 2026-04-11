@@ -1,0 +1,21 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+*:not(dialog) {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: radial-gradient(
+    ellipse farthest-side at 50% 80%, 
+    #ff985c 10px, 
+    black 60px
+  );
+}
