@@ -1,21 +1,43 @@
-*, *::before, *::after {
-  box-sizing: border-box;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
 *:not(dialog) {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
-html, body {
-  height: 100%;
-  width: 100%;
+html,
+body {
+	height: 100%;
+	width: 100%;
 }
 
 body {
-  background: radial-gradient(
-    ellipse farthest-side at 50% 80%, 
-    #ff985c 10px, 
-    black 60px
-  );
+	background: linear-gradient(
+		to top,
+		#d45827 45%,
+		#f3642a 50%,
+		#f3a228 55%,
+		#365a81 60%,
+		#233b50 65%,
+		#121e2b 70%,
+		#111111 100%
+	);
 }
+
+/* radial gradient example */
+/* background: radial-gradient(
+  circle 150px at 50% 100%, 
+  circle farthest-side at 90% 50%, 
+  circle farthest-side at 50% 100%, 
+  #d45827 65%,
+  #f3642a 76.5%,
+  #f3a228 82.5%,
+  #365a81 87.5%,
+  #233b50 90%,
+  #121e2b 97.5%,
+  #111111 100%
+); */
