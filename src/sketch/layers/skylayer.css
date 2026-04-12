@@ -99,37 +99,74 @@
 
 	.cloud {
 		/* background-color: red; */
+		width: 400px;
+		height: 200px;
+		position: absolute;
 	}
 
 	.cloudpuff {
+		position: absolute;
 		width: 100px;
-		/* height: 50px; */
 		border-radius: 50%;
 		box-shadow: 0px 0px 50px 10px rgb(255 255 255 / 100%);
 	}
 
 	#cloud1 {
-		width: 600px;
-		height: 200px;
-		position: absolute;
 		right: 20%;
 		top: 10%;
 
 		#cloudpuff1 {
-			position: absolute;
-			top: 0;
-			left: 0;
+			top: 22.5%;
+			left: 10%;
 		}
 
 		#cloudpuff2 {
-			position: absolute;
-			top: 0;
-			right: 0;
+			top: 20%;
+			right: 40%;
 		}
 
 		#cloudpuff3 {
-			position: absolute;
-			top: 0;
+			top: 45%;
+			right: 50%;
+		}
+	}
+
+	#cloud2 {
+		left: 10%;
+		top: 5%;
+
+		#cloudpuff1 {
+			top: 22.5%;
+			left: 10%;
+		}
+
+		#cloudpuff2 {
+			top: 20%;
+			right: 40%;
+		}
+
+		#cloudpuff3 {
+			top: 45%;
+			right: 50%;
+		}
+	}
+
+	#cloud3 {
+		right: 1%;
+		top: 5%;
+
+		#cloudpuff1 {
+			top: 22.5%;
+			left: 10%;
+		}
+
+		#cloudpuff2 {
+			top: 20%;
+			right: 40%;
+		}
+
+		#cloudpuff3 {
+			top: 45%;
 			right: 50%;
 		}
 	}
