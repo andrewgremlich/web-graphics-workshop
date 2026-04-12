@@ -1,6 +1,6 @@
 /** biome-ignore-all lint/correctness/noUnknownFunction: random function is known in safari */
-#layer1 {
-	& .star {
+#skylayer {
+	.star {
 		position: absolute;
 
 		/* make the size dynamic? */
@@ -17,7 +17,7 @@
 	}
 
 	@supports (width: random(1px, 10px)) {
-		& .star {
+		.star {
 			width: random(1px, 5px);
 			height: random(1px, 5px);
 			left: random(2.5%, 95%);
@@ -26,75 +26,112 @@
 		}
 	}
 
-	& #star1 {
+	#star1 {
 		left: 5%;
 		top: 5%;
 
 		animation-delay: 0.1s;
 	}
 
-	& #star2 {
+	#star2 {
 		left: 8.5%;
 		top: 6.5%;
 		animation-delay: 0.4s;
 	}
 
-	& #star3 {
+	#star3 {
 		left: 25%;
 		top: 8%;
 
 		animation-delay: 0.3s;
 	}
 
-	& #star4 {
+	#star4 {
 		left: 27.5%;
 		top: 6.5%;
 
 		animation-delay: 0.7s;
 	}
 
-	& #star5 {
+	#star5 {
 		left: 28%;
 		top: 9.5%;
 
 		animation-delay: 1s;
 	}
 
-	& #star6 {
+	#star6 {
 		right: 39.5%;
 		top: 8%;
 		animation-delay: 0.9s;
 	}
 
-	& #star7 {
+	#star7 {
 		right: 45%;
 		top: 11%;
 		animation-delay: 0.2s;
 	}
 
-	& #star8 {
+	#star8 {
 		right: 17.5%;
 		top: 3%;
 
 		animation-delay: 0.8s;
 	}
 
-	& #star9 {
+	#star9 {
 		right: 15%;
 		top: 2%;
 		animation-delay: 0.6s;
 	}
 
-	& #star10 {
+	#star10 {
 		right: 5%;
 		top: 11.5%;
 		animation-delay: 0.5s;
 	}
 
-	& #star11 {
+	#star11 {
 		left: 45%;
 		top: 2.5%;
 		animation-delay: 0.1s;
+	}
+
+	.cloud {
+		/* background-color: red; */
+	}
+
+	.cloudpuff {
+		width: 100px;
+		/* height: 50px; */
+		border-radius: 50%;
+		box-shadow: 0px 0px 50px 10px rgb(255 255 255 / 100%);
+	}
+
+	#cloud1 {
+		width: 600px;
+		height: 200px;
+		position: absolute;
+		right: 20%;
+		top: 10%;
+
+		#cloudpuff1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		#cloudpuff2 {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+
+		#cloudpuff3 {
+			position: absolute;
+			top: 0;
+			right: 50%;
+		}
 	}
 }
 
