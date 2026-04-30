@@ -116,17 +116,17 @@
 		top: 10%;
 
 		#cloudpuff1 {
-			top: 22.5%;
-			left: 10%;
+			top: 25%;
+			left: 15%;
 		}
 
 		#cloudpuff2 {
-			top: 20%;
+			top: 17%;
 			right: 40%;
 		}
 
 		#cloudpuff3 {
-			top: 45%;
+			top: 40%;
 			right: 50%;
 		}
 	}
@@ -136,17 +136,17 @@
 		top: 5%;
 
 		#cloudpuff1 {
-			top: 22.5%;
+			top: 42.5%;
 			left: 10%;
 		}
 
 		#cloudpuff2 {
-			top: 20%;
+			top: 40%;
 			right: 40%;
 		}
 
 		#cloudpuff3 {
-			top: 45%;
+			top: 22.5%;
 			right: 50%;
 		}
 	}
@@ -156,18 +156,18 @@
 		top: 5%;
 
 		#cloudpuff1 {
-			top: 22.5%;
+			top: 25.5%;
 			left: 10%;
 		}
 
 		#cloudpuff2 {
-			top: 20%;
+			top: 25%;
 			right: 40%;
 		}
 
 		#cloudpuff3 {
-			top: 45%;
-			right: 50%;
+			top: 40%;
+			right: 55%;
 		}
 	}
 }

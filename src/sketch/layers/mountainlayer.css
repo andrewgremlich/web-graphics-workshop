@@ -1,14 +1,17 @@
 #mountainlayer {
 	& #mountain1 {
-		border-left: 300px solid transparent;
-		border-right: 300px solid transparent;
-		
-		border-bottom: 500px solid #0a1e15;
-
-		transform: rotate(9deg);
-
-		position: absolute;
-		left: 10%;
-		top: 20%;
+		background: linear-gradient(to top, darkred, darkgreen);
+		height: 400px;
+		width: 400px;
+		aspect-ratio: 1;
+		clip-path: shape(from 10% 10%,
+				curve to 20% 20% with 50px 10px,
+				smooth to 90px 10px,
+				curve by -20px 60% with 10% 40px / 20% 20px,
+				smooth by -40% -10px with -10px 70px,
+				close);
 	}
 }
+
+/* https://css-shape.com/ */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/basic-shape/shape */
