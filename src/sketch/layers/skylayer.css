@@ -10,10 +10,7 @@
 
 		background-color: white;
 		opacity: 1;
-		animation-duration: 3s;
-		animation-name: flicker;
-		animation-timing-function: ease-in-out;
-		animation-iteration-count: infinite;
+		animation: flicker 1200ms infinite alternate ease-in-out;
 	}
 
 	@supports (width: random(1px, 10px)) {
@@ -102,6 +99,8 @@
 		width: 400px;
 		height: 200px;
 		position: absolute;
+		animation: cloud-wiggle 5000ms infinite alternate ease-in-out;
+		transform: translateX(-20px);
 	}
 
 	.cloudpuff {
@@ -114,6 +113,7 @@
 	#cloud1 {
 		right: 20%;
 		top: 10%;
+		animation-delay: 200ms;
 
 		#cloudpuff1 {
 			top: 25%;
@@ -134,6 +134,7 @@
 	#cloud2 {
 		left: 10%;
 		top: 5%;
+		animation-delay: 400ms;
 
 		#cloudpuff1 {
 			top: 42.5%;
@@ -173,15 +174,21 @@
 }
 
 @keyframes flicker {
-	0% {
+	from {
 		opacity: 1;
 	}
 
-	50% {
+	to {
 		opacity: 25%;
 	}
+}
 
-	100% {
-		opacity: 1;
+@keyframes cloud-wiggle {
+	from {
+		transform: translateX(-20px);
+	}
+
+	to {
+		transform: translateX(20px);
 	}
 }
