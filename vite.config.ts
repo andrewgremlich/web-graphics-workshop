@@ -10,7 +10,8 @@ export default defineConfig({
     rolldownOptions: {
       input: {
         main: resolve(root, 'index.html'),
-        sketch: resolve(root, 'src/sketch/sketch.html')
+        sketch: resolve(root, 'src/sketch/sketch.html'),
+        campfire: resolve(root, "src/campfire/index.html")
       }
     }
   }

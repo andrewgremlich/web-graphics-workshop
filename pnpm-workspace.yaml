@@ -1,4 +1,6 @@
 packages: []
+allowBuilds:
+  workerd: true
 onlyBuiltDependencies:
   - esbuild
   - sharp

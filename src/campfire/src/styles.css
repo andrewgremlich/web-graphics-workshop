@@ -1,0 +1,131 @@
+html,
+body {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+body {
+	background: #010a11;
+}
+
+[data-lucide] {
+	color: white;
+	width: 64px;
+	height: 64px;
+	background-color: darkblue;
+	transition: background-color 200ms;
+	padding: 8px;
+	border-radius: 25%;
+	margin: 10px;
+
+	&:hover {
+		background-color: blue;
+		cursor: pointer;
+	}
+}
+
+#firepit {
+	position: relative;
+	width: 300px;
+	height: 40%;
+}
+
+#sound-nav {
+	position: fixed;
+	bottom: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.log {
+	position: absolute;
+	width: 200px;
+	height: 40px;
+	border-radius: 15px;
+	left: 50%;
+	top: 50%;
+}
+
+#log-1 {
+	background-color: rgb(67, 45, 20);
+	transform: translate(-50%, -50%) rotate(20deg);
+}
+
+#log-2 {
+	background-color: rgb(80, 51, 18);
+	transform: translate(-50%, -50%) rotate(-30deg);
+}
+
+#log-3 {
+	background-color: rgb(95, 67, 36);
+	transform: translate(-50%, -50%) rotate(-10deg);
+}
+
+.flame {
+	position: absolute;
+	height: 300px;
+	width: 200px;
+	clip-path: shape(
+		from var(--flame-from-x-start) var(--flame-from-y-start),
+		curve to var(--curve-to-position-x-1-start) 89.965% with 73.013%
+			var(--curve-to-control-y-1-start),
+		curve to 38.608% 83.912% with 36.54% 107.564%
+	);
+	opacity: 0.85;
+	transform-origin: bottom;
+}
+
+#flame-1 {
+	background-color: rgb(251, 189, 56);
+	left: 5%;
+	bottom: 42%;
+}
+
+#flame-2 {
+	background-color: rgb(250, 181, 31);
+	left: 15%;
+	bottom: 50%;
+}
+
+#flame-3 {
+	background-color: rgb(251, 170, 56);
+	left: 25%;
+	bottom: 45%;
+}
+
+@keyframes flame-flicker {
+	to {
+		clip-path: shape(
+			from var(--flame-from-x-end) var(--flame-from-y-end),
+			curve to var(--curve-to-position-x-1-end) 89.965% with 73.013%
+				var(--curve-to-control-y-1-end),
+			curve to 38.608% 83.912% with 36.54% 107.564%
+		);
+	}
+}
+
+.flame-particle {
+	position: absolute;
+	left: var(--left-position);
+	bottom: 50%;
+	opacity: 0.85;
+	z-index: -1;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: rgb(255, 199, 79);
+	animation: flame-particle-motion var(--animation-duration)
+		cubic-bezier(0.45, 1, 1, 1);
+}
+
+@keyframes flame-particle-motion {
+	to {
+		transform: translateY(var(--flame-particle-distance));
+		opacity: 0;
+		width: 1px;
+		height: 5px;
+	}
+}

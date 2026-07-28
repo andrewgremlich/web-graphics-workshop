@@ -1,8 +1,10 @@
 .mountain {
-	background: linear-gradient(to top,
-			rgb(0, 17, 9) 30%,
-			rgb(2, 31, 20) 60%,
-			rgb(85, 68, 47) 90%);
+	background: linear-gradient(
+		to top,
+		rgb(0, 17, 9) 30%,
+		rgb(2, 31, 20) 60%,
+		rgb(85, 68, 47) 90%
+	);
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -24,7 +26,13 @@
 			transform: translate(10%, -40%);
 			height: 45%;
 			width: 40%;
-			clip-path: shape(from 2.316% 96.07%, smooth to 7.622% 42.622%, smooth to 37.393% 12.512%, smooth to 98.18% 96.763%, close);
+			clip-path: shape(
+				from 2.316% 96.07%,
+				smooth to 7.622% 42.622%,
+				smooth to 37.393% 12.512%,
+				smooth to 98.18% 96.763%,
+				close
+			);
 		}
 	}
 
@@ -33,7 +41,13 @@
 			transform: translate(-120%, -40%);
 			height: 50%;
 			width: 40%;
-			clip-path: shape(from 2.316% 96.07%, smooth to 23.362% 54.475%, smooth to 56.645% 14.688%, smooth to 98.18% 96.763%, close);
+			clip-path: shape(
+				from 2.316% 96.07%,
+				smooth to 23.362% 54.475%,
+				smooth to 56.645% 14.688%,
+				smooth to 98.18% 96.763%,
+				close
+			);
 		}
 	}
 
@@ -42,7 +56,13 @@
 			transform: translate(-50%, -30%);
 			height: 50%;
 			width: 80%;
-			clip-path: shape(from 2.316% 96.07%, smooth to 23.362% 54.475%, smooth to 63.738% 40.782%, smooth to 98.18% 96.763%, close);
+			clip-path: shape(
+				from 2.316% 96.07%,
+				smooth to 23.362% 54.475%,
+				smooth to 63.738% 40.782%,
+				smooth to 98.18% 96.763%,
+				close
+			);
 		}
 	}
 }
