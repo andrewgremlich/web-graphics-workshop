@@ -9,10 +9,11 @@ export default defineConfig({
   build: {
     rolldownOptions: {
       input: {
-        main: resolve(root, 'index.html'),
-        sketch: resolve(root, 'src/sketch/sketch.html'),
-        campfire: resolve(root, "src/campfire/index.html")
-      }
-    }
-  }
-})
+        main: resolve(root, "index.html"),
+        sketch: resolve(root, "src/sketch/sketch.html"),
+        campfire: resolve(root, "src/campfire/index.html"),
+        canvas: resolve(root, "src/canvas/index.html"),
+      },
+    },
+  },
+});
