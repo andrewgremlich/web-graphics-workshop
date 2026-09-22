@@ -12,7 +12,7 @@ export default defineConfig({
         main: resolve(root, "index.html"),
         sketch: resolve(root, "src/sketch/sketch.html"),
         campfire: resolve(root, "src/campfire/index.html"),
-        canvas: resolve(root, "src/canvas/index.html"),
+        widman: resolve(root, "src/widman/index.html"),
       },
     },
   },
