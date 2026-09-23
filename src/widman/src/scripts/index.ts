@@ -7,6 +7,11 @@ updateCanvasCtx();
 
 const ctx = getCtx();
 
+// Widmanstätten pattern
+// https://nnix.com/projects/meteorite/
+// https://github.com/davidemerson/widmanstatten/blob/main/meteorite.py
+// https://grady.dev/projects/widmanst%C3%A4tten/
+
 function generatePointsAlongControlLine() {
 	const [beginning, ending] = [
 		{ x: 10, y: 10 },
