@@ -1,7 +1,7 @@
 import "../style/styles.css";
 
 import "./canvas.ts";
-import { pointsOnBezierCurves } from "points-on-curve";
+// import { pointsOnBezierCurves } from "points-on-curve";
 import { getCtx, updateCanvasCtx } from "./canvas.ts";
 
 updateCanvasCtx();
@@ -42,12 +42,12 @@ function generatePointsAlongControlLine() {
 		{ x: 10, y: 10 },
 		{ x: 100, y: 200 },
 	];
-	const points = pointsOnBezierCurves([
-		[beginning.x, beginning.y],
-		[20, 10],
-		[110, 200],
-		[ending.x, ending.y],
-	]);
+	// const points = pointsOnBezierCurves([
+	// 	[beginning.x, beginning.y],
+	// 	[20, 10],
+	// 	[110, 200],
+	// 	[ending.x, ending.y],
+	// ]);
 
 	const rotateDeg = (Math.PI / 180) * 10;
 	const newPoint = rotatePoint({ x: beginning.x, y: beginning.y }, rotateDeg);
@@ -55,10 +55,10 @@ function generatePointsAlongControlLine() {
 	debugPoint(newPoint);
 	debugPoint(rotatePoint({ x: ending.x, y: ending.y }, rotateDeg));
 
-	const angleOfControlLine = Math.atan2(
-		ending.y - beginning.y,
-		ending.x - beginning.x,
-	);
+	// const angleOfControlLine = Math.atan2(
+	// 	ending.y - beginning.y,
+	// 	ending.x - beginning.x,
+	// );
 
 	const path2D = new Path2D(); // Path2D can be daisy chained
 
