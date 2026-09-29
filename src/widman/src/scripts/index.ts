@@ -17,14 +17,14 @@ const line = generateSymmetricLeafPath({
 	beginning: { x: 10, y: 50 },
 	ending: { x: 500, y: 50 },
 	rotationRadians: (Math.PI / 180) * 20,
-	controlOffset: 10,
+	controlOffset: 5,
 });
 
 const line2 = generateSymmetricLeafPath({
 	beginning: { x: 10, y: 200 },
 	ending: { x: 450, y: 200 },
 	rotationRadians: -(Math.PI / 180) * 20,
-	controlOffset: 10,
+	controlOffset: 5,
 });
 
 ctx.lineWidth = 3;
