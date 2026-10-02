@@ -18,7 +18,9 @@
     "wrangler": "^4.114.0"
   },
   "dependencies": {
+    "array-shuffle": "^4.1.0",
     "lucide": "^1.27.0",
-    "points-on-curve": "^1.0.1"
+    "points-on-curve": "^1.0.1",
+    "random": "^5.5.1"
   }
 }

@@ -8,12 +8,18 @@ importers:
 
   .:
     dependencies:
+      array-shuffle:
+        specifier: ^4.1.0
+        version: 4.1.0
       lucide:
         specifier: ^1.27.0
         version: 1.48.0
       points-on-curve:
         specifier: ^1.0.1
         version: 1.0.1
+      random:
+        specifier: ^5.5.1
+        version: 5.5.1
     devDependencies:
       '@cloudflare/vite-plugin':
         specifier: ^1.47.0
@@ -659,6 +665,10 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  array-shuffle@4.1.0:
+    resolution: {integrity: sha512-VeSwSNI0y9NojZ/seTJujlyO2xQCwdfn5ujU2ji+VaHos2z4u88aqy6nCVIJhmaMTOQvqNyIWwOJ/pSlYjPhTQ==}
+    engines: {node: '>=20'}
+
   blake3-wasm@2.1.5:
     resolution: {integrity: sha512-F1+K8EbfOZE49dtoPtmxUQrpXaBIl3ICvasLh+nJta0xkz+9kF/7uet9fLnwKqhDrmj6g+6K3Tw9yQPUg2ka5g==}
 
@@ -801,6 +811,10 @@ packages:
   postcss@8.5.28:
     resolution: {integrity: sha512-RRuzqDtt5Y9h3quz5hWhK+TPnsmVs6WwSU6LkJMeY4HstUEDuYTG8UJSdawMRzmzAtV+KEoG8N3Qg2qLy5vM/A==}
     engines: {node: ^10 || ^12 || >=14}
+
+  random@5.5.1:
+    resolution: {integrity: sha512-2TIJKf/BGjy0FGeZaan2+a/vq37afbSyscquADMFC13KBjFmg+10T/TkACpP9GMHfbEruKYbHqq0rjCA9x8gNA==}
+    engines: {node: '>=20'}
 
   rolldown@1.2.11:
     resolution: {integrity: sha512-qpSwIyz0jHQq5qXBTNxFmE6664rJ7O+4TvPFOiOaBSrz8IOHc1koKKSqTM2H6u1UG1+TveuC6vaDHKXFOvb1Kw==}
@@ -1297,6 +1311,8 @@ snapshots:
   '@typescript/typescript-win32-x64@7.0.2':
     optional: true
 
+  array-shuffle@4.1.0: {}
+
   blake3-wasm@2.1.5: {}
 
   cookie@1.1.1: {}
@@ -1424,6 +1440,8 @@ snapshots:
       nanoid: 3.3.19
       picocolors: 1.1.1
       source-map-js: 1.2.1
+
+  random@5.5.1: {}
 
   rolldown@1.2.11:
     dependencies:
