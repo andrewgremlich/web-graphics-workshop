@@ -35,10 +35,11 @@ groupPositions.forEach((val, iter) => {
   const yPosition = groupPositions[iter].y;
 
   const degIter = random.int(0, 3);
+  const forwards = random.bool();
   const lengthOfStroke = random.int(600, 1000);
   const controlOffset = random.int(4, 10);
   const streakGrouping = random.int(4, 7);
-  const colorShadingStroke = random.int(37, 47);
+  const colorShadingStroke = random.int(45, 47);
   const colorShadingFill = random.int(47, 57);
 
   for (let i = 0; i <= streakGrouping; i++) {
@@ -46,7 +47,10 @@ groupPositions.forEach((val, iter) => {
 
     const line = generateSymmetricLeafPath({
       beginning: { x: xPosition, y: yPosition + groupingOffset },
-      ending: { x: xPosition + lengthOfStroke, y: yPosition + groupingOffset },
+      ending: {
+        x: xPosition + forwards ? lengthOfStroke : -lengthOfStroke,
+        y: yPosition + groupingOffset,
+      },
       rotationRadians: degIter * 60,
       controlOffset,
     });
