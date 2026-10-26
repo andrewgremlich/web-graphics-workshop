@@ -1,8 +1,8 @@
-import { createIcons, Play, Pause } from "lucide";
+import { createIcons, Pause, Play } from "lucide";
 
 createIcons({
-  icons: {
-    Play,
-    Pause,
-  },
+	icons: {
+		Play,
+		Pause,
+	},
 });

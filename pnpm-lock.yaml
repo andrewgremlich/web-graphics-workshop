@@ -14,9 +14,6 @@ importers:
       lucide:
         specifier: ^1.27.0
         version: 1.48.0
-      points-on-curve:
-        specifier: ^1.0.1
-        version: 1.0.1
       random:
         specifier: ^5.5.1
         version: 5.5.1
@@ -805,9 +802,6 @@ packages:
     resolution: {integrity: sha512-qcJu88Q2IWqJsDD529JKMdwGm/dvInW4HvQnRwiH9JtihJvzGOscDtHE3x1pBKeUOTysQ8kVmLnJ2kJu7yhcGA==}
     engines: {node: '>=12'}
 
-  points-on-curve@1.0.1:
-    resolution: {integrity: sha512-3nmX4/LIiyuwGLwuUrfhTlDeQFlAhi7lyK/zcRNGhalwapDWgAGR82bUpmn2mA03vII3fvNCG8jAONzKXwpxAg==}
-
   postcss@8.5.28:
     resolution: {integrity: sha512-RRuzqDtt5Y9h3quz5hWhK+TPnsmVs6WwSU6LkJMeY4HstUEDuYTG8UJSdawMRzmzAtV+KEoG8N3Qg2qLy5vM/A==}
     engines: {node: ^10 || ^12 || >=14}
@@ -1432,8 +1426,6 @@ snapshots:
   picocolors@1.1.1: {}
 
   picomatch@4.0.7: {}
-
-  points-on-curve@1.0.1: {}
 
   postcss@8.5.28:
     dependencies:

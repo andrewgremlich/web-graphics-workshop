@@ -1,9 +1,21 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: #1c1e20;
 }
 
 canvas {
-    border: 1px solid black;
+  display: block;
+  width: min(100%, 1000px);
+  border: 1px solid #62676b;
+  border-radius: 20px;
+  box-shadow: 0 12px 48px #0006;
 }

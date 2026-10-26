@@ -3,58 +3,33 @@ const ctx = canvas?.getContext("2d");
 
 export const CANVAS_WIDTH = 1000;
 export const CANVAS_HEIGHT = 800;
+export const CANVAS_ASPECT_RATIO = CANVAS_WIDTH / CANVAS_HEIGHT;
 
 if (!canvas) throw Error("Canvas could not get set");
-
 if (!ctx) throw Error("CTX not available");
 
-canvas.style.width = `${CANVAS_WIDTH}px`;
-canvas.style.height = `${CANVAS_HEIGHT}px`;
 
-await document.fonts.load("60px IBM Plex Serif");
 
 export function updateCanvasCtx() {
-	if (!canvas) {
-		return;
-	}
+  if (!canvas) {
+    return;
+  }
 
-	const { width, height } = canvas.getBoundingClientRect();
-	const dpr = window.devicePixelRatio || 1;
+  const { width, height } = canvas.getBoundingClientRect();
+  const dpr = window.devicePixelRatio || 1;
 
-	canvas.width = Math.floor(width * dpr);
-	canvas.height = Math.floor(height * dpr);
+  canvas.width = Math.floor(width * dpr);
+  canvas.height = Math.floor(height * dpr);
 
-	ctx?.scale(dpr, dpr);
+  ctx?.setTransform(canvas.width / CANVAS_WIDTH, 0, 0, canvas.height / CANVAS_HEIGHT, 0, 0);
 }
 
 export function getCanvas() {
-	if (!canvas) throw "Can not continue with out canvas";
-
-	return canvas;
+  if (!canvas) throw "Can not continue with out canvas";
+  return canvas;
 }
 
 export function getCtx() {
-	if (!ctx) throw "can not continue without ctx";
-
-	return ctx;
-}
-
-export function createLayer(
-	paint: (ctx: OffscreenCanvasRenderingContext2D) => void,
-) {
-	let cached: OffscreenCanvas | null = null;
-
-	return () => {
-		if (cached) return cached;
-
-		const layer = new OffscreenCanvas(CANVAS_WIDTH, CANVAS_HEIGHT);
-		const ctx = layer.getContext("2d");
-
-		if (!ctx) throw new Error("no ctx");
-
-		paint(ctx);
-
-		cached = layer;
-		return layer;
-	};
+  if (!ctx) throw "can not continue without ctx";
+  return ctx;
 }
