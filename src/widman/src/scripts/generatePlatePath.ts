@@ -11,20 +11,16 @@ export function generatePlatePath({
   width: number;
   direction: Point;
 }): Path2D {
+  const matrix = new DOMMatrix();
   const local = new Path2D();
+  const path = new Path2D();
+
   local.roundRect(0, -width / 2, length, width, width / 4);
 
-  const path = new Path2D();
-  path.addPath(
-    local,
-    new DOMMatrix([
-      direction.x,
-      direction.y,
-      -direction.y,
-      direction.x,
-      start.x,
-      start.y,
-    ]),
-  );
+  matrix.translateSelf(start.x, start.y);
+  matrix.rotateSelf((Math.atan2(direction.y, direction.x) * 180) / Math.PI);
+
+  path.addPath(local, matrix);
+
   return path;
 }

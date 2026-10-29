@@ -10,6 +10,15 @@ body {
   place-items: center;
   padding: 20px;
   background: #1c1e20;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 45px;
+  line-height: 105%;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 canvas {
