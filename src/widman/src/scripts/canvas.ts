@@ -8,8 +8,6 @@ export const CANVAS_ASPECT_RATIO = CANVAS_WIDTH / CANVAS_HEIGHT;
 if (!canvas) throw Error("Canvas could not get set");
 if (!ctx) throw Error("CTX not available");
 
-
-
 export function updateCanvasCtx() {
   if (!canvas) {
     return;
